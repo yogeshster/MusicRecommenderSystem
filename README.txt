@@ -77,10 +77,3 @@ create table user_to_instrument (user_id varchar2(60) references user_system(use
 10. The suggestions improve when the user hits the LIKE button against the songs displayed in the SUGGESTIONS area (However, there is no indication on screen, that the like button has been clicked). 
 
 11. Random tracks are also displayed in order to help the user discover new music. If the user likes the random songs, the song suggestions will improve accordingly.
-
-Role of project members:
-
-Nitish Ganesan and Dhivya Govindarajan :
-The pre-processing of the dataset which includes table normalization and mapping functional dependencies. The preprocessed data was then loaded into the relational database and the database was connected to the weka explorer mining tool for applying k-means clustering technique to generate clusters for the songs.
-
-Yogesh Jagadeesan and Pradeep Kumar Duvvur: Created the UI and did client side and server side scripting. Implemented the main logic for suggesting the songs based on the users' liking by analyzing the clusters of the songs that were liked. 
